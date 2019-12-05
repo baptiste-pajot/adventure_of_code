@@ -25,14 +25,15 @@ def main():
                 tab[tab[i + 3]] = param1 * param2
             i += 4
         elif tab[i] % 10 == 3:
-            tab[tab[i + 1]] = int(input("value ?"))
+            if tab[i] % 1000 // 100:
+                tab[i + 1] = int(input("value ?"))
+            else:
+                tab[tab[i + 1]] = int(input("value ?"))
             i += 2
         elif tab[i] % 10 == 4:
-            print(tab[tab[i + 1]])
+            param1 =  tab[i + 1] if (tab[i] % 1000 // 100) else tab[tab[i + 1]]
+            print("test", param1)
             i += 2
-        #print(i)
-        #print(tab)
-    #print(tab)
 
 
 if __name__ == "__main__":
