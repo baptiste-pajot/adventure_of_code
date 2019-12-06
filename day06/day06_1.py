@@ -23,7 +23,6 @@ def main():
     print(result)
 
 def rec(name, dictio, previous):
-    #print(name)
     if name in dictio:
         dictio[name]["len"] = previous + 1
         for x in dictio[name]["next"]:
