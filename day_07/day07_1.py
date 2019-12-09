@@ -49,6 +49,7 @@ def day_05(tab, previous, param):
         elif tab[i] % 10 == 4:
             param1 =  tab[i + 1] if (tab[i] % 1000 // 100) else tab[tab[i + 1]]
             output = param1
+            print("output =", output)
             i += 2
         elif tab[i] % 10 == 5:
             param1 =  tab[i + 1] if (tab[i] % 1000 // 100) else tab[tab[i + 1]]
