@@ -92,6 +92,5 @@ def day_05(tab, previous, param):
                 tab[tab[i + 3]] = 1 if param1 == param2 else 0
             i += 4
 
-
 if __name__ == "__main__":
     main()
